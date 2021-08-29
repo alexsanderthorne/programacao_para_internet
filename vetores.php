@@ -5,4 +5,9 @@
         echo $valor . ', '; 
     }
 
+    function funcao($argumento){
+        echo $argumento . "\n";
+    }
+
+    funcao("Testando funcões")
 ?>
