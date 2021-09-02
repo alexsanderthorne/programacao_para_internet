@@ -9,7 +9,7 @@
         echo $argumento . "\n";
     }
 
-    funcao("Testando funcões")
+    funcao("Testando funcões bora ver")
 
    //
 ?>
