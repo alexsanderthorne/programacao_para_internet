@@ -1,5 +1,11 @@
 {
     "require": {
         "fzaninotto/faker": "^1.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aplicattion\\": "module/Aplication/src/",
+            "Album\\": "module/Album/src/"
+        }
     }
 }
