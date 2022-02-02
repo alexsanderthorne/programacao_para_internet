@@ -1,23 +1,20 @@
+<?php
+
 namespace Album\Controller;
 
+// Add the following import:
+use Album\Model\AlbumTable;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class AlbumController extends AbstractActionController
+class AlbumController extends AlbumController
 {
-    public function indexAction()
-    {
-    }
+    // Add this property:
+    private $table;
 
-    public function addAction()
+    // Add this constructor:
+    public function __construct(AlbumTable $table)
     {
-    }
-
-    public function editAction()
-    {
-    }
-
-    public function deleteAction()
-    {
+        $this->table = $table;
     }
 }
