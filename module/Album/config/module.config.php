@@ -1,17 +1,12 @@
+<?php 
 namespace Album;
 
 use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
-return [
-    'controllers' => [
-        'factories' => [
-            Controller\AlbumController::class => InvokableFactory::class,
-        ],
-    ],
 
-    // The following section is new and should be added to your file:
-    'router' => [
+return [
+    'router' =>[
         'routes' => [
             'album' => [
                 'type'    => Segment::class,
@@ -28,8 +23,8 @@ return [
                 ],
             ],
         ],
+    
     ],
-
     'view_manager' => [
         'template_path_stack' => [
             'album' => __DIR__ . '/../view',
